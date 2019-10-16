@@ -17,6 +17,8 @@
 		E54AACC42356AE2E00F17F00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACC32356AE2E00F17F00 /* main.m */; };
 		E54AACCE2356AE2E00F17F00 /* SomeCodingToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACCD2356AE2E00F17F00 /* SomeCodingToolTests.m */; };
 		E54AACD92356AE2E00F17F00 /* SomeCodingToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACD82356AE2E00F17F00 /* SomeCodingToolUITests.m */; };
+		E54AACE92356E66B00F17F00 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACE82356E66B00F17F00 /* BaseViewController.m */; };
+		E54AACEC2356E69B00F17F00 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACEB2356E69B00F17F00 /* HomePageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		E54AACD42356AE2E00F17F00 /* SomeCodingToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeCodingToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54AACD82356AE2E00F17F00 /* SomeCodingToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeCodingToolUITests.m; sourceTree = "<group>"; };
 		E54AACDA2356AE2E00F17F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54AACE72356E66B00F17F00 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E54AACE82356E66B00F17F00 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E54AACEA2356E69B00F17F00 /* HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageVC.h; sourceTree = "<group>"; };
+		E54AACEB2356E69B00F17F00 /* HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,18 +112,17 @@
 		E54AACAD2356AE2D00F17F00 /* SomeCodingTool */ = {
 			isa = PBXGroup;
 			children = (
-				E54AACAE2356AE2D00F17F00 /* AppDelegate.h */,
-				E54AACAF2356AE2D00F17F00 /* AppDelegate.m */,
 				E54AACB12356AE2D00F17F00 /* SceneDelegate.h */,
 				E54AACB22356AE2D00F17F00 /* SceneDelegate.m */,
-				E54AACB42356AE2D00F17F00 /* ViewController.h */,
-				E54AACB52356AE2D00F17F00 /* ViewController.m */,
-				E54AACB72356AE2D00F17F00 /* Main.storyboard */,
 				E54AACBD2356AE2E00F17F00 /* Assets.xcassets */,
 				E54AACBF2356AE2E00F17F00 /* LaunchScreen.storyboard */,
 				E54AACC22356AE2E00F17F00 /* Info.plist */,
 				E54AACC32356AE2E00F17F00 /* main.m */,
 				E54AACBA2356AE2D00F17F00 /* SomeCodingTool.xcdatamodeld */,
+				E54AACE62356E60100F17F00 /* Other */,
+				E54AACED2356E7C600F17F00 /* BaseTool */,
+				E54AACEA2356E69B00F17F00 /* HomePageVC.h */,
+				E54AACEB2356E69B00F17F00 /* HomePageVC.m */,
 			);
 			path = SomeCodingTool;
 			sourceTree = "<group>";
@@ -138,6 +143,27 @@
 				E54AACDA2356AE2E00F17F00 /* Info.plist */,
 			);
 			path = SomeCodingToolUITests;
+			sourceTree = "<group>";
+		};
+		E54AACE62356E60100F17F00 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E54AACAE2356AE2D00F17F00 /* AppDelegate.h */,
+				E54AACAF2356AE2D00F17F00 /* AppDelegate.m */,
+				E54AACB42356AE2D00F17F00 /* ViewController.h */,
+				E54AACB52356AE2D00F17F00 /* ViewController.m */,
+				E54AACB72356AE2D00F17F00 /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E54AACED2356E7C600F17F00 /* BaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				E54AACE72356E66B00F17F00 /* BaseViewController.h */,
+				E54AACE82356E66B00F17F00 /* BaseViewController.m */,
+			);
+			path = BaseTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54AACC42356AE2E00F17F00 /* main.m in Sources */,
+				E54AACE92356E66B00F17F00 /* BaseViewController.m in Sources */,
 				E54AACB62356AE2D00F17F00 /* ViewController.m in Sources */,
 				E54AACBC2356AE2D00F17F00 /* SomeCodingTool.xcdatamodeld in Sources */,
+				E54AACEC2356E69B00F17F00 /* HomePageVC.m in Sources */,
 				E54AACB02356AE2D00F17F00 /* AppDelegate.m in Sources */,
 				E54AACB32356AE2D00F17F00 /* SceneDelegate.m in Sources */,
 			);

@@ -1,6 +1,6 @@
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-
+#import "HomePageVC.h"
 @interface SceneDelegate ()
 
 @end
@@ -9,9 +9,17 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    //iOS13之前，Appdelegate的职责全权处理App生命周期和UI生命周期；
+    //iOS13之后，Appdelegate的职责是：
+    //1、处理 App 生命周期
+    //2、新的 Scene Session 生命周期
+    //UI生命周期交给SceneDelegate处理
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+    self.window.frame = windowScene.coordinateSpace.bounds;
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[HomePageVC new]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
 }
 
 
