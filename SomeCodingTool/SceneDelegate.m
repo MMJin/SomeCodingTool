@@ -1,6 +1,7 @@
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
 #import "HomePageVC.h"
+#import "BaseNavController.h"
 @interface SceneDelegate ()
 
 @end
@@ -17,7 +18,7 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[HomePageVC new]];
+    BaseNavController *nav = [[BaseNavController alloc]initWithRootViewController:[HomePageVC new]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
 }

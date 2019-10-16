@@ -19,6 +19,7 @@
 		E54AACD92356AE2E00F17F00 /* SomeCodingToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACD82356AE2E00F17F00 /* SomeCodingToolUITests.m */; };
 		E54AACE92356E66B00F17F00 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACE82356E66B00F17F00 /* BaseViewController.m */; };
 		E54AACEC2356E69B00F17F00 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACEB2356E69B00F17F00 /* HomePageVC.m */; };
+		E54AACF02356F93300F17F00 /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AACEF2356F93300F17F00 /* BaseNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		E54AACE82356E66B00F17F00 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E54AACEA2356E69B00F17F00 /* HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageVC.h; sourceTree = "<group>"; };
 		E54AACEB2356E69B00F17F00 /* HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
+		E54AACEE2356F93300F17F00 /* BaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
+		E54AACEF2356F93300F17F00 /* BaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 			children = (
 				E54AACE72356E66B00F17F00 /* BaseViewController.h */,
 				E54AACE82356E66B00F17F00 /* BaseViewController.m */,
+				E54AACEE2356F93300F17F00 /* BaseNavController.h */,
+				E54AACEF2356F93300F17F00 /* BaseNavController.m */,
 			);
 			path = BaseTool;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			files = (
 				E54AACC42356AE2E00F17F00 /* main.m in Sources */,
 				E54AACE92356E66B00F17F00 /* BaseViewController.m in Sources */,
+				E54AACF02356F93300F17F00 /* BaseNavController.m in Sources */,
 				E54AACB62356AE2D00F17F00 /* ViewController.m in Sources */,
 				E54AACBC2356AE2D00F17F00 /* SomeCodingTool.xcdatamodeld in Sources */,
 				E54AACEC2356E69B00F17F00 /* HomePageVC.m in Sources */,
