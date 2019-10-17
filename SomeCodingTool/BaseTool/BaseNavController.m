@@ -23,7 +23,7 @@
     //修改title字体大小
     self.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:20],NSForegroundColorAttributeName:[[UIColor blackColor] colorWithAlphaComponent:0.8]};
     UIView *navigationview = [[UIView alloc] initWithFrame:CGRectMake(0, 0,375, 64)];
-    navigationview.backgroundColor = UIColor.yellowColor;
+    //navigationview.backgroundColor = UIColor.yellowColor;
     [self.view addSubview:navigationview];
 
     //去除导航栏下的黑线
