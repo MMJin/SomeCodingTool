@@ -32,6 +32,12 @@
 		E54AAD1523584AD700F17F00 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD0723584AD700F17F00 /* TransitionController.m */; };
 		E54AAD1623584AD700F17F00 /* TranDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD0923584AD700F17F00 /* TranDemoViewController.m */; };
 		E54AAD1723584AD700F17F00 /* BaseHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD0B23584AD700F17F00 /* BaseHomeView.m */; };
+		E54AAD1C2359477F00F17F00 /* UILabel+StringSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD1B2359477F00F17F00 /* UILabel+StringSet.m */; };
+		E54AAD2923599CC200F17F00 /* JSWebVIewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD1E23599CC200F17F00 /* JSWebVIewBase.m */; };
+		E54AAD2A23599CC200F17F00 /* InteractiveResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2023599CC200F17F00 /* InteractiveResultModel.m */; };
+		E54AAD2B23599CC200F17F00 /* Interactive.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2123599CC200F17F00 /* Interactive.m */; };
+		E54AAD2C23599CC200F17F00 /* NSMutableDictionary+JSData.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2323599CC200F17F00 /* NSMutableDictionary+JSData.m */; };
+		E54AAD2D23599CC200F17F00 /* InteractiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2523599CC200F17F00 /* InteractiveModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +108,18 @@
 		E54AAD0923584AD700F17F00 /* TranDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranDemoViewController.m; sourceTree = "<group>"; };
 		E54AAD0B23584AD700F17F00 /* BaseHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHomeView.m; sourceTree = "<group>"; };
 		E54AAD0C23584AD700F17F00 /* BaseHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHomeView.h; sourceTree = "<group>"; };
+		E54AAD1A2359477F00F17F00 /* UILabel+StringSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+StringSet.h"; sourceTree = "<group>"; };
+		E54AAD1B2359477F00F17F00 /* UILabel+StringSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+StringSet.m"; sourceTree = "<group>"; };
+		E54AAD1E23599CC200F17F00 /* JSWebVIewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebVIewBase.m; sourceTree = "<group>"; };
+		E54AAD2023599CC200F17F00 /* InteractiveResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveResultModel.m; sourceTree = "<group>"; };
+		E54AAD2123599CC200F17F00 /* Interactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interactive.m; sourceTree = "<group>"; };
+		E54AAD2223599CC200F17F00 /* InteractiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveModel.h; sourceTree = "<group>"; };
+		E54AAD2323599CC200F17F00 /* NSMutableDictionary+JSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JSData.m"; sourceTree = "<group>"; };
+		E54AAD2423599CC200F17F00 /* InteractiveResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveResultModel.h; sourceTree = "<group>"; };
+		E54AAD2523599CC200F17F00 /* InteractiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveModel.m; sourceTree = "<group>"; };
+		E54AAD2623599CC200F17F00 /* Interactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactive.h; sourceTree = "<group>"; };
+		E54AAD2723599CC200F17F00 /* NSMutableDictionary+JSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSData.h"; sourceTree = "<group>"; };
+		E54AAD2823599CC200F17F00 /* JSWebVIewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebVIewBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +250,8 @@
 		E54AACF123584AD600F17F00 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				E54AAD1D23599C2200F17F00 /* H5OC */,
+				E54AAD192359471000F17F00 /* UILabel+StringSet */,
 				E54AACF523584AD600F17F00 /* 请求 */,
 				E54AACF823584AD600F17F00 /* 设置 */,
 				E54AACFB23584AD600F17F00 /* 选择器 */,
@@ -296,6 +316,40 @@
 				E54AAD0C23584AD700F17F00 /* BaseHomeView.h */,
 			);
 			path = "主页item";
+			sourceTree = "<group>";
+		};
+		E54AAD192359471000F17F00 /* UILabel+StringSet */ = {
+			isa = PBXGroup;
+			children = (
+				E54AAD1A2359477F00F17F00 /* UILabel+StringSet.h */,
+				E54AAD1B2359477F00F17F00 /* UILabel+StringSet.m */,
+			);
+			path = "UILabel+StringSet";
+			sourceTree = "<group>";
+		};
+		E54AAD1D23599C2200F17F00 /* H5OC */ = {
+			isa = PBXGroup;
+			children = (
+				E54AAD1F23599CC200F17F00 /* Interactive */,
+				E54AAD2823599CC200F17F00 /* JSWebVIewBase.h */,
+				E54AAD1E23599CC200F17F00 /* JSWebVIewBase.m */,
+			);
+			path = H5OC;
+			sourceTree = "<group>";
+		};
+		E54AAD1F23599CC200F17F00 /* Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				E54AAD2023599CC200F17F00 /* InteractiveResultModel.m */,
+				E54AAD2123599CC200F17F00 /* Interactive.m */,
+				E54AAD2223599CC200F17F00 /* InteractiveModel.h */,
+				E54AAD2323599CC200F17F00 /* NSMutableDictionary+JSData.m */,
+				E54AAD2423599CC200F17F00 /* InteractiveResultModel.h */,
+				E54AAD2523599CC200F17F00 /* InteractiveModel.m */,
+				E54AAD2623599CC200F17F00 /* Interactive.h */,
+				E54AAD2723599CC200F17F00 /* NSMutableDictionary+JSData.h */,
+			);
+			path = Interactive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,13 +510,16 @@
 			files = (
 				E54AAD1223584AD700F17F00 /* CustomTypeButton.m in Sources */,
 				E54AACC42356AE2E00F17F00 /* main.m in Sources */,
+				E54AAD2C23599CC200F17F00 /* NSMutableDictionary+JSData.m in Sources */,
 				E54AACE92356E66B00F17F00 /* BaseViewController.m in Sources */,
 				E54AAD0D23584AD700F17F00 /* ContentView.m in Sources */,
 				E54AAD1723584AD700F17F00 /* BaseHomeView.m in Sources */,
 				E54AACF02356F93300F17F00 /* BaseNavController.m in Sources */,
+				E54AAD1C2359477F00F17F00 /* UILabel+StringSet.m in Sources */,
 				E54AAD1023584AD700F17F00 /* ObjcSystemCallTool.m in Sources */,
 				E54AAD1623584AD700F17F00 /* TranDemoViewController.m in Sources */,
 				E54AACB62356AE2D00F17F00 /* ViewController.m in Sources */,
+				E54AAD2923599CC200F17F00 /* JSWebVIewBase.m in Sources */,
 				E54AAD1423584AD700F17F00 /* HSPushAnimation.m in Sources */,
 				E54AAD1523584AD700F17F00 /* TransitionController.m in Sources */,
 				E54AAD1323584AD700F17F00 /* TranDemo2ViewController.m in Sources */,
@@ -471,6 +528,9 @@
 				E54AACEC2356E69B00F17F00 /* HomePageVC.m in Sources */,
 				E54AACB02356AE2D00F17F00 /* AppDelegate.m in Sources */,
 				E54AAD0E23584AD700F17F00 /* BaseGCDSemaphore.m in Sources */,
+				E54AAD2B23599CC200F17F00 /* Interactive.m in Sources */,
+				E54AAD2D23599CC200F17F00 /* InteractiveModel.m in Sources */,
+				E54AAD2A23599CC200F17F00 /* InteractiveResultModel.m in Sources */,
 				E54AAD0F23584AD700F17F00 /* RequestToolManager.m in Sources */,
 				E54AACB32356AE2D00F17F00 /* SceneDelegate.m in Sources */,
 			);
