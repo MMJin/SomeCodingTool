@@ -38,6 +38,8 @@
 		E54AAD2B23599CC200F17F00 /* Interactive.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2123599CC200F17F00 /* Interactive.m */; };
 		E54AAD2C23599CC200F17F00 /* NSMutableDictionary+JSData.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2323599CC200F17F00 /* NSMutableDictionary+JSData.m */; };
 		E54AAD2D23599CC200F17F00 /* InteractiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E54AAD2523599CC200F17F00 /* InteractiveModel.m */; };
+		E596EAB7235D3DAB007B401E /* MJSomeDesignTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E596EAB6235D3DAB007B401E /* MJSomeDesignTableView.m */; };
+		E596EABA235D4393007B401E /* SomeDesignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E596EAB9235D4393007B401E /* SomeDesignTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,12 @@
 		E54AAD2623599CC200F17F00 /* Interactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactive.h; sourceTree = "<group>"; };
 		E54AAD2723599CC200F17F00 /* NSMutableDictionary+JSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSData.h"; sourceTree = "<group>"; };
 		E54AAD2823599CC200F17F00 /* JSWebVIewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebVIewBase.h; sourceTree = "<group>"; };
+		E54AFA6123629C15000CE98E /* BaseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
+		E54AFA622362C396000CE98E /* Base_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base_PrefixHeader.pch; sourceTree = "<group>"; };
+		E596EAB5235D3DAB007B401E /* MJSomeDesignTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSomeDesignTableView.h; sourceTree = "<group>"; };
+		E596EAB6235D3DAB007B401E /* MJSomeDesignTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSomeDesignTableView.m; sourceTree = "<group>"; };
+		E596EAB8235D4393007B401E /* SomeDesignTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeDesignTableViewCell.h; sourceTree = "<group>"; };
+		E596EAB9235D4393007B401E /* SomeDesignTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeDesignTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +251,12 @@
 				E54AACE82356E66B00F17F00 /* BaseViewController.m */,
 				E54AACEE2356F93300F17F00 /* BaseNavController.h */,
 				E54AACEF2356F93300F17F00 /* BaseNavController.m */,
+				E596EAB5235D3DAB007B401E /* MJSomeDesignTableView.h */,
+				E596EAB6235D3DAB007B401E /* MJSomeDesignTableView.m */,
+				E596EAB8235D4393007B401E /* SomeDesignTableViewCell.h */,
+				E596EAB9235D4393007B401E /* SomeDesignTableViewCell.m */,
+				E54AFA6123629C15000CE98E /* BaseHeader.h */,
+				E54AFA622362C396000CE98E /* Base_PrefixHeader.pch */,
 			);
 			path = BaseTool;
 			sourceTree = "<group>";
@@ -519,7 +533,9 @@
 				E54AAD1023584AD700F17F00 /* ObjcSystemCallTool.m in Sources */,
 				E54AAD1623584AD700F17F00 /* TranDemoViewController.m in Sources */,
 				E54AACB62356AE2D00F17F00 /* ViewController.m in Sources */,
+				E596EABA235D4393007B401E /* SomeDesignTableViewCell.m in Sources */,
 				E54AAD2923599CC200F17F00 /* JSWebVIewBase.m in Sources */,
+				E596EAB7235D3DAB007B401E /* MJSomeDesignTableView.m in Sources */,
 				E54AAD1423584AD700F17F00 /* HSPushAnimation.m in Sources */,
 				E54AAD1523584AD700F17F00 /* TransitionController.m in Sources */,
 				E54AAD1323584AD700F17F00 /* TranDemo2ViewController.m in Sources */,
@@ -704,6 +720,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K65A9CD389;
+				GCC_PREFIX_HEADER = SomeCodingTool/BaseTool/Base_PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MQTTClient\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"/User/fcnc05/Desktop/SomeCodingTool/BaseTool/BaseHeader\"",
+				);
 				INFOPLIST_FILE = SomeCodingTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,6 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujisoft.SomeCodingTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -723,6 +750,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K65A9CD389;
+				GCC_PREFIX_HEADER = SomeCodingTool/BaseTool/Base_PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MQTTClient\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+				);
 				INFOPLIST_FILE = SomeCodingTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -732,6 +768,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujisoft.SomeCodingTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

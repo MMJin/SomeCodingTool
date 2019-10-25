@@ -41,6 +41,7 @@
     [backBtn setImage:[UIImage imageNamed:backImage] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     [navigationview addSubview:backBtn];
+
 }
 -(void)backAction {
     NSLog(@"back");
