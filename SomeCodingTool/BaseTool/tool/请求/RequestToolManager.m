@@ -36,6 +36,7 @@ static RequestToolManager *manager = nil;
     manager.requestSerializer.timeoutInterval = 10.f;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     [manager.requestSerializer setValue:@"multipart/form-data" forHTTPHeaderField:@"Content-Type"];
+    //缓存设置时的添加Last-Modified，If-Modified-Since去服务器询问有没有数据变更 有的话重新发送数据，没有的话直接返回结果
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"multipart/form-data", @"application/json", @"text/html", @"image/jpeg", @"image/jpg", @"image/png", @"application/octet-stream", @"text/json", nil];
     return manager;
 }
@@ -88,5 +89,13 @@ static RequestToolManager *manager = nil;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error = %@",error);
     }];
+}
+//请求的数据缓存
+//缓存的设计原则上 是以空间换时间 主要是考虑服务端的压力及客户的体验上
+//首先网络请求 post不可以缓存  只有get请求可以 因为缓存是建立在查询的参数为key，对应的值为value   post数据放在body体中 则键值对应   json数据大括号包着
+-(void)cacheData{
+    //分配缓存用的内存
+    NSURLCache *requestCache = [[NSURLCache alloc]initWithMemoryCapacity:4 *1024 *1024 diskCapacity:20 *1024 *1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:requestCache];
 }
 @end

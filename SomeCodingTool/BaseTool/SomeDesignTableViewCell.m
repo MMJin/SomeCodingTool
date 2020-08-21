@@ -7,6 +7,8 @@
 //
 
 #import "SomeDesignTableViewCell.h"
+
+#import "ObjcSystemCallTool.h"
 //关于高可以是在动态计算高的时候和cell初始话时传进来的用同一个计算方式
 @implementation SomeDesignTableViewCell
 
@@ -44,6 +46,8 @@
 }
 -(void)butClick {
     NSLog(@"点击了btn");
+    [ObjcSystemCallTool callSystemSet];
+
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

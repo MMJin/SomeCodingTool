@@ -9,6 +9,7 @@
 #import "HomePageVC.h"
 #import "MJSomeDesignTableView.h"
 #import "MMJKeepAliveThread.h"
+#import "ObjcSystemCallTool.h"
 @interface HomePageVC ()
 /** 用于判断销毁线程 */
 @property (nonatomic, assign) BOOL stopping;

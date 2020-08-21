@@ -1455,7 +1455,7 @@ static NSString *ModelDescription(NSObject *model) {
     return [self yy_modelWithDictionary:dic];
 }
 
-+ (instancetype)yy_modelWithDictionary:(NSDictionary *)dictionary {
++ (instancetype) yy_modelWithDictionary:(NSDictionary *)dictionary {
     if (!dictionary || dictionary == (id)kCFNull) return nil;
     if (![dictionary isKindOfClass:[NSDictionary class]]) return nil;
     
